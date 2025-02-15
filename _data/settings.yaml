@@ -16,9 +16,9 @@ menu_settings:
       sub_items:
         - title: 'CV'
           url: '/Eductaion/CV'
-        - title: 'paper'
+        - title: 'Paper'
           url: '/Eductaion/paper'
-          
+
     - title: 'Projects'
       url: '/projects'
       sub_items:
