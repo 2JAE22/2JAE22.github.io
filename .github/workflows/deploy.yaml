@@ -35,10 +35,17 @@ jobs:
           echo "Checking _site folder..."
           ls -l _site || (echo "_site folder not found!" && exit 1)
 
+      - name: Remove symlinks
+        run: |
+          find _site -type l -delete
+
+      - name: Set permissions
+        run: |
+          chmod -R a+rX _site
+
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-artifact@v4  # Use a standard upload action for clarity
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: jekyll-site
           path: _site
 
   deploy:
@@ -50,6 +57,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Update to v4 for compatibility
-        with:
-          artifact_name: jekyll-site  # Specify the artifact name if needed
+        uses: actions/deploy-pages@v4
