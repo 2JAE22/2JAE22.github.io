@@ -36,8 +36,9 @@ jobs:
           ls -l _site || (echo "_site folder not found!" && exit 1)
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@main  # ✅ GitHub Pages용 업로드 액션 사용
+        uses: actions/upload-artifact@v4  # Use a standard upload action for clarity
         with:
+          name: jekyll-site
           path: _site
 
   deploy:
@@ -49,4 +50,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4  # Update to v4 for compatibility
+        with:
+          artifact_name: jekyll-site  # Specify the artifact name if needed
