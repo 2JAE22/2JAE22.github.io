@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - main  # main 브랜치에서 직접 배포
+      - main  # main 브랜치에서 배포 실행
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          persist-credentials: false  # 기본 GITHUB_TOKEN 제거
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
