@@ -1,58 +1,41 @@
-name: Build and Deploy Jekyll Site
-
+name: Deploy Jekyll site to GitHub Pages
 on:
   push:
-    branches:
-      - main  # main 브랜치에서 배포 실행
+    branches: [ "main" ]  # main 브랜치에 push가 발생할 때 빌드
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Check out the repository
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false  # 기본 GITHUB_TOKEN 제거
 
-      - name: Set up Ruby
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.7'
+          ruby-version: 3.1  # 프로젝트에 맞춰 설정
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
           gem install bundler
-          bundle install
-
-      - name: Build Jekyll Site
-        run: bundle exec jekyll build
-
-      - name: Check if GH_PATH is set
-        run: |
-          if [[ -z "${{ secrets.GH_PATH }}" ]]; then
-            echo "❌ GH_PATH is not set"
-            exit 1
-          else
-            echo "✅ GH_PATH is set"
-          fi
+          bundle install --path vendor/bundle
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
-
-      - name: Deploy to GitHub Pages (gh-pages 브랜치)
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          bundle exec jekyll build --trace
 
-          # gh-pages 브랜치 생성 (기록 없이)
-          git checkout --orphan gh-pages
-          git rm -rf . || true
-
-          # 빌드 결과물을 현재 디렉토리로 복사
-          cp -R _site/* .
-
-          git add .
-          # 변경사항이 없더라도 빈 커밋을 만들거나, 강제로 커밋하도록 할 수 있습니다.
-          git commit -m "🚀 Deploy Jekyll site" --allow-empty
-          git push -f origin gh-pages
+      - name: Upload artifact for deployment
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site
+  deploy:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
