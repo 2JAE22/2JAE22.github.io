@@ -4,41 +4,39 @@ on:
   push:
     branches: [ "main" ]
 
-permissions:  
+permissions:
   contents: read
   pages: write
-  id-token: write  # 🔥 OpenID Connect(OIDC) 사용을 위해 꼭 필요
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1) 체크아웃
-      - name: Check out your repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
-      # 2) Ruby 세팅
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.7'  # 필요 시 조정
+          ruby-version: '3.3.7'
 
-      # 3) 의존성 설치
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install --path vendor/bundle
 
-      # 4) 빌드
       - name: Build Jekyll site
         run: |
-          bundle exec jekyll build --trace
+          bundle exec jekyll build --trace || (echo "Jekyll build failed!" && exit 1)
 
-      # 5) Pages 아티팩트 업로드
-      #    (원래 actions/upload-pages-artifact@v1 -> main 브랜치나 커밋 해시로 교체)
-      - name: Upload artifact
-        # 방법 A) main 브랜치를 직접 참조
-        uses: actions/upload-artifact@v4
+      - name: Debug: Check _site folder
+        run: |
+          echo "Checking _site folder..."
+          ls -l _site || (echo "_site folder not found!" && exit 1)
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@main  # ✅ GitHub Pages용 업로드 액션 사용
         with:
           path: _site
 
