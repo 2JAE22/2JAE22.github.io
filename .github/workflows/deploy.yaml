@@ -1,20 +1,20 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy Jekyll site to Pages
+
 on:
   push:
-    branches: [ "main" ]  # main 브랜치에 push가 발생할 때 빌드
+    branches: [ "main" ]  # ← 자신이 사용하는 브랜치에 맞춰 변경
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out the repository
+      - name: Check out your repository
         uses: actions/checkout@v3
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1  # 프로젝트에 맞춰 설정
+          ruby-version: '3.3.7'  # 필요 시 수정
 
       - name: Install dependencies
         run: |
@@ -22,19 +22,19 @@ jobs:
           bundle install --path vendor/bundle
 
       - name: Build Jekyll site
-        run: |
-          bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace
 
-      - name: Upload artifact for deployment
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./_site
+
   deploy:
-    needs: build-deploy
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
