@@ -1,0 +1,118 @@
+// _variables.scss (순수 SCSS, !default로만 설정)
+
+//
+// Colors
+//
+$background-color: #ffffff !default;
+$background-alt-color: #f8f8f8 !default;
+$border-color: #cccccc !default;
+
+$text-dark-color: #333333 !default;
+$text-medium-color: #666666 !default;
+$text-light-color: #999999 !default;
+
+$accent-color: #ff6600 !default;
+
+$hero-background-color: #333333 !default;
+$hero-text-color: #ffffff !default;
+
+$error-color: #ff0000 !default;
+
+
+//
+// Fonts
+//
+$body-font: "Arial", sans-serif !default;
+$title-font: "Georgia", serif !default;
+
+$regular-weight: 400 !default;
+$bold-weight: 700 !default;
+
+
+//
+// Typography
+//
+$sitetitle-small: 20px !default;
+$sitetitle-medium: 24px !default;
+$sitetitle-large: 30px !default;
+$sitetitle-weight: 700 !default;
+$sitetitle-spacing: 0.05em !default;
+
+$menu-small: 14px !default;
+$menu-medium: 16px !default;
+$menu-large: 18px !default;
+$menu-weight: 600 !default;
+$menu-spacing: 0.05em !default;
+
+$h1-small: 24px !default;
+$h1-medium: 28px !default;
+$h1-large: 32px !default;
+$h1-weight: 700 !default;
+$h1-spacing: 0em !default;
+$h1-lineheight: 1.4 !default;
+
+$h2-small: 22px !default;
+$h2-medium: 26px !default;
+$h2-large: 30px !default;
+$h2-weight: 700 !default;
+$h2-spacing: 0em !default;
+$h2-lineheight: 1.4 !default;
+
+$h3-small: 20px !default;
+$h3-medium: 24px !default;
+$h3-large: 28px !default;
+$h3-weight: 600 !default;
+$h3-spacing: 0em !default;
+$h3-lineheight: 1.4 !default;
+
+$h4-small: 18px !default;
+$h4-medium: 20px !default;
+$h4-large: 24px !default;
+$h4-weight: 600 !default;
+$h4-spacing: 0em !default;
+$h4-lineheight: 1.4 !default;
+
+$h5-small: 16px !default;
+$h5-medium: 18px !default;
+$h5-large: 20px !default;
+$h5-weight: 500 !default;
+$h5-spacing: 0em !default;
+$h5-lineheight: 1.4 !default;
+
+$h6-small: 14px !default;
+$h6-medium: 16px !default;
+$h6-large: 18px !default;
+$h6-weight: 500 !default;
+$h6-spacing: 0em !default;
+$h6-lineheight: 1.4 !default;
+
+$p-small: 14px !default;
+$p-medium: 16px !default;
+$p-large: 18px !default;
+$p-weight: 400 !default;
+$p-spacing: 0em !default;
+$p-lineheight: 1.6 !default;
+
+$blockquote-small: 14px !default;
+$blockquote-medium: 16px !default;
+$blockquote-large: 18px !default;
+$blockquote-weight: 400 !default;
+$blockquote-spacing: 0em !default;
+$blockquote-lineheight: 1.6 !default;
+
+$button-weight: 600 !default;
+$button-spacing: 0.05em !default;
+
+
+//
+// Logo
+//
+$logo-width: 150px !default;
+$footer-logo-width: 120px !default;
+
+
+//
+// Post details
+//
+$overlay-opacity: 0.7 !default;
+$grid-spacing: 20px !default;
