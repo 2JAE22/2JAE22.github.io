@@ -26,15 +26,15 @@ jobs:
       - name: Build Jekyll Site
         run: bundle exec jekyll build
 
-      # - name: Deploy to GitHub Pages
-      #   run: |
-      #     touch _site/.nojekyll  # GitHub Pages가 _site 폴더를 그대로 읽게 함
-      #     cp -r _site/* .  # _site 내용 메인 브랜치 루트로 이동
-      #     git config --global user.name "${{ github.actor }}"
-      #     git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-      #     git add .
-      #     git commit -m "🚀 Auto-deploy Jekyll site"
-      #     git push origin main
+      - name: Check if GH_PATH is set
+        run: |
+          if [[ -z "${{ secrets.GH_PATH }}" ]]; then
+            echo "❌ GH_PATH is not set"
+            exit 1
+          else
+            echo "✅ GH_PATH is set"
+          fi
+
       - name: Push changes
         run: |
           git config --global user.name "github-actions[bot]"
