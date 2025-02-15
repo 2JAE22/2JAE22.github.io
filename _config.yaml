@@ -57,7 +57,7 @@ kramdown:
   
 sass:
   style: compressed
-  allow_liquid_in_sass: true
+
 
 plugins:
   - jekyll-paginate
