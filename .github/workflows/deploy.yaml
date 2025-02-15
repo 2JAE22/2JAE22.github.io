@@ -2,39 +2,51 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: [ "main" ]  # ← 자신이 사용하는 브랜치에 맞춰 변경
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1) 체크아웃
       - name: Check out your repository
         uses: actions/checkout@v4
 
+      # 2) Ruby 세팅
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.7'  # 필요 시 수정
+          ruby-version: '3.3.7'  # 필요 시 조정
 
+      # 3) 의존성 설치
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install --path vendor/bundle
 
+      # 4) 빌드
       - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
+        run: |
+          bundle exec jekyll build --trace
 
+      # 5) Pages 아티팩트 업로드
+      #    (원래 actions/upload-pages-artifact@v1 -> main 브랜치나 커밋 해시로 교체)
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        # 방법 A) main 브랜치를 직접 참조
+        uses: actions/upload-artifact@v4
+        
+        # 방법 B) 특정 커밋 해시를 고정(pinning)해도 됨 (예: a49f3df...)
+        # uses: actions/upload-pages-artifact@a49f3dfe2bb3124d3cfd89fe4328512fc215412a
+
         with:
           path: ./_site
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
