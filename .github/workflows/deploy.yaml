@@ -4,6 +4,11 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:  
+  contents: read
+  pages: write
+  id-token: write  # 🔥 OpenID Connect(OIDC) 사용을 위해 꼭 필요
+
 jobs:
   build:
     runs-on: ubuntu-latest
