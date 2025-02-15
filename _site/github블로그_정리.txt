@@ -1,3 +1,6 @@
 projects-> financial, CV, LLM, Statics 이렇게 나누어서 하면 되겠다.
 Education -> CV, github, 등등 추가할 수 있게금 하면 되겠다.
 CodingTest -> 이론, 문제풀이 이렇게 나누어서 하면 될거같다. 지금은 layout 만들어볼까
+
+
+test1
