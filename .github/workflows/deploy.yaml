@@ -39,12 +39,8 @@ jobs:
       - name: Upload artifact
         # 방법 A) main 브랜치를 직접 참조
         uses: actions/upload-artifact@v4
-        
-        # 방법 B) 특정 커밋 해시를 고정(pinning)해도 됨 (예: a49f3df...)
-        # uses: actions/upload-pages-artifact@a49f3dfe2bb3124d3cfd89fe4328512fc215412a
-
         with:
-          path: ./_site
+          path: _site
 
   deploy:
     needs: build
