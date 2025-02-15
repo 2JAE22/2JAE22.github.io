@@ -30,7 +30,7 @@ jobs:
         run: |
           bundle exec jekyll build --trace || (echo "Jekyll build failed!" && exit 1)
 
-      - name: Debug: Check _site folder
+      - name: Debug Check _site folder
         run: |
           echo "Checking _site folder..."
           ls -l _site || (echo "_site folder not found!" && exit 1)
