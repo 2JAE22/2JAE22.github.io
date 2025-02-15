@@ -37,16 +37,36 @@ jobs:
             echo "✅ GH_PATH is set"
           fi
 
-      - name: Commit & Push changes
+      - name: Build and Deploy to GitHub Pages (gh-pages 브랜치)
         run: |
+          # 1. Jekyll 사이트 빌드 (serve 명령어에 --trace 추가)
+          bundle exec jekyll serve --trace &
+          JEKYLL_PID=$!
+          # 빌드가 완료될 시간을 확보 (필요에 따라 시간 조정)
+          sleep 10
+          # 백그라운드로 실행한 jekyll serve 종료
+          kill $JEKYLL_PID
+
+          # 2. 빌드 결과물(_site)의 내용을 임시 백업 (mv 전에 보존)
+          cp -R _site ../_site_backup
+
+          # 3. GitHub Pages 배포 준비
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # gh-pages 브랜치로 전환 (이전 기록 없이)
+          git checkout --orphan gh-pages
+          git rm -rf . || true
+
+          # 4. 백업해둔 빌드 결과물을 현재 디렉토리로 복사
+          cp -R ../_site_backup/* .
 
           git add .
           if git diff --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "🚀 Auto-deploy Jekyll site"
-          git push origin main
+          git commit -m "🚀 Deploy Jekyll site"
+          git push -f origin gh-pages
+
 
