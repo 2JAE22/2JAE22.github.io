@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - main  # main 브랜치에서 직접 배포
+      - main  # main 브랜치에서 배포 실행
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          persist-credentials: false  # 기본 GITHUB_TOKEN 제거
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -37,16 +37,19 @@ jobs:
             echo "✅ GH_PATH is set"
           fi
 
-      - name: Commit & Push changes
+      - name: Deploy to GitHub Pages (`gh-pages` 브랜치)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout --orphan gh-pages  # 새 브랜치 생성 (기존 기록 제거)
+          git rm -rf .  # 기존 파일 삭제
+          mv _site/* .  # 빌드된 파일을 루트로 이동
 
           git add .
           if git diff --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "🚀 Auto-deploy Jekyll site"
-          git push origin main
-
+          git commit -m "🚀 Deploy Jekyll site"
+          git push -f origin gh-pages  # 강제 푸시 (브랜치 초기화)
