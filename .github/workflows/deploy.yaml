@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # 기본 GITHUB_TOKEN credential 제거
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -34,12 +36,23 @@ jobs:
           else
             echo "✅ GH_PATH is set"
           fi
-
-      - name: Push changes
+      - name: Configure Git with GH_PATH
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 여기서 GH_PATH가 Secrets로부터 가져와지는지 확인
           git remote set-url origin https://x-access-token:${{ secrets.GH_PATH }}@github.com/2JAE22/2JAE22.github.io.git
+
+          # 혹시 shallow clone 상태라면 풀어줍니다(선택 사항)
+          git fetch --unshallow || true
+
+          # remote 설정이 잘 됐는지 확인 (디버깅용)
+          git remote -v
+
+      - name: Commit & Push changes
+        run: |
           git add .
           git commit -m "🚀 Auto-deploy Jekyll site"
+          # main 브랜치로 푸시
           git push origin main
+
