@@ -14,7 +14,7 @@ menu_settings:
     - title: 'Education'
       url: '/Eductaion'
       sub_items:
-        - title: 'CV'
+        - title: 'Computer Vision'
           url: '/Eductaion/CV'
         - title: 'Paper'
           url: '/Eductaion/paper'

@@ -9,13 +9,13 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /educations/:path #소문자로만 적어야 인식함.
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /projects/:path
   archives:
     output: true
-    permalink: /archives/:slug
+    permalink: /archives/:path
 
 defaults:
   -

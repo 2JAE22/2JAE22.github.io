@@ -1,0 +1,157 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* 기본 body 스타일 */
+body {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+/* 메인 컨텐츠 박스 스타일 */
+.content {
+  width: 1000px;
+  padding: 25px 50px;
+  margin: 25px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+  font-family: "Google Sans", sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 중첩된 content 클래스 스타일 */
+.content .content {
+  width: auto;
+  padding: 25px 30px;
+  margin: 30px 0;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* 저자 섹션 스타일 */
+.authors-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin: 40px 0;
+}
+
+.author {
+  text-align: center;
+}
+
+.author a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+/* 링크 컨테이너 스타일 */
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.project-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #4a4a4a;
+  transform: translateY(-2px);
+}
+
+/* 제목 스타일 */
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* 텍스트 스타일 */
+p {
+  line-height: 25px;
+  text-align: justify;
+}
+
+/* 비디오 컨테이너 스타일 */
+.center-video {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.t ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.t li {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* 이미지 관련 스타일 */
+.teaser-img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summary-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 1020px) {
+  .content {
+    width: 95%;
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .authors-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .t li {
+    min-width: 100%;
+  }
+}
