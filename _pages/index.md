@@ -7,7 +7,7 @@ featured_image: /images/about/banner_image.jpg
 
 # 📌print("Hello World!")
 
-![Profile Image](/images/about/profile_image.jpg){: width="200" height="200" style="float: right; margin-right: 20px; margin-left: 20px; margin-bottom: 20px;"}
+![Profile Image](/images/about/profile_image2.jpg){: width="200" height="200" style="float: right; margin-right: 20px; margin-left: 20px; margin-bottom: 20px;"}
 
 👋HI! I am Jaegun Lee. I am a M.S. student at [KNU DataScience](https://data.knu.ac.kr/), majoring in Artificial Intelligence. I am working as an AI graduate researcher at [Computer Vision](https://sites.google.com/view/knu-vilab) at [KNU](https://www.knu.ac.kr/wbbs/wbbs/main/main.action), advised by [Prof. Janghoon Choi](https://sites.google.com/view/knu-vilab/members?authuser=0). 
 
