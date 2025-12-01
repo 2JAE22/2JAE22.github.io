@@ -12,18 +12,16 @@ featured_image: /images/about/banner_image.jpg
 👋HI! I am Jaegun Lee. I am a M.S. student at [KNU DataScience](https://data.knu.ac.kr/), majoring in Artificial Intelligence. I am working as an AI graduate researcher at [Computer Vision](https://sites.google.com/view/knu-vilab) at [KNU](https://www.knu.ac.kr/wbbs/wbbs/main/main.action), advised by [Prof. Janghoon Choi](https://sites.google.com/view/knu-vilab/members?authuser=0). 
 
 <br/>
+I am deeply interested in AI research, particularly in Computer Vision. My work focuses on **post-training** methods such as **reinforcement-based** optimization, as well as **Generative AI**. Ultimately, I aim to create AI systems that deliver meaningful value by enabling users to imagine, build, and share their ideas freely.
 
-I am interested in research on AI, especially in [Computer Vision](). Within this field, I focus on **Model lightweighting**, particularly Mixture of Experts (MoE), **inpainting** techniques, and **Vision-Language Models** (VLMs). I hope to use AI to provide meaningful value to users, enabling them to freely envision, realize, and share what they believe in.
 
 <br/>
 
 Particularly, I am researching on the following topics:
 
-**1. Model Lightweighting**
+**1. Reinforcement**
 
-**2. VLM**
-
-**3. Inpating**
+**2. Generative AI**
 
 <br/>
 
@@ -31,7 +29,7 @@ Particularly, I am researching on the following topics:
 <a href="mailto:leejken530@naver.com" class="button button--medium"><i class="fa fa-envelope"></i> E-mail</a>
 <a href="https://github.com/2JAE22" target="_blank" class="button button--medium"><i class="fa-brands fa-github"></i> Github</a>
 <!-- <a href="https://www.linkedin.com/" target="_blank" class="button button--medium"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> -->
-<!-- <a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a> -->
+<a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a>
 <br/>
 
 - Email: leejken530@naver.com
@@ -40,6 +38,8 @@ Particularly, I am researching on the following topics:
 <hr/>
 
 ## 📌News
+
+**
 
 **Jan. 2025**: My <b>[MoE를 활용한 객체활용방법론]()</b> paper got accepted to <b>[IPIU](http://www.ipiu.or.kr/)!</b>
 
