@@ -1,6 +1,6 @@
 ---
 title: Jaegun Lee
-subtitle: M.S. Student at CV Lab, Kyungpook DataScience
+subtitle: M.S. Student at CV Lab, Kyungpook National University DataScience
 description: Research on AI especially in Computer vision 
 featured_image: /images/about/banner_image.jpg
 ---
@@ -26,13 +26,15 @@ Particularly, I am researching on the following topics:
 <br/>
 
 <a href="/pdf/cv.pdf" target="_blank" class="button button--medium"><i class="fa fa-file-pdf"></i> CV</a>
-<a href="mailto:leejken530@naver.com" class="button button--medium"><i class="fa fa-envelope"></i> E-mail</a>
+<a href="/pdf/portfolio.pdf" target="_blank" class="button button--medium"><i class="fa fa-file-pdf"></i> Portfolio</a>
+<a href="mailto:leejken530@knu.ac.kr" class="button button--medium"><i class="fa fa-envelope"></i> E-mail</a>
 <a href="https://github.com/2JAE22" target="_blank" class="button button--medium"><i class="fa-brands fa-github"></i> Github</a>
+
 <!-- <a href="https://www.linkedin.com/" target="_blank" class="button button--medium"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> -->
 <a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a>
 <br/>
 
-- Email: leejken530@naver.com
+- Email: leejken530@knu.ac.kr
 
 <br/>
 <hr/>
