@@ -141,7 +141,7 @@ Particularly, I am researching on the following topics:
 ---
 ## 📌Projects
 
-### 1. Financial
+<!-- ### 1. Financial
 #### (1) Fraud Detection
 
 #### (2) Bond Time Series Analysis
@@ -161,33 +161,44 @@ Particularly, I am researching on the following topics:
 
 
 ### 3. LLM
-#### (1) Audio AI Model Lightweighting Project
+#### (1) Audio AI Model Lightweighting Project -->
 
 <br/>
 <hr/>
 
-## 📌Honors and Awards
+## 📌 Honors and Awards
 
-#### 2023 KNU Award - Excellence Prize Winner
-- Excellence Award Winner at Kyungpook National University Hackathon
+**Sep. 2025** — *Future Research Award*
+**K-Data Science Conference**, [K-DS Consortium](https://kdatascience.kr/)
 
+* Proposed **SuperSmall-R1**, a lightweight math reasoning model trained purely with reinforcement learning, achieving significant accuracy gains on Math-500.
 
-#### 2023 BigData Award - Excellence Prize Winner
-- Excellence Award Winner at the Daegu Big Data Utilization Competition
+**Jan. 2024** — *Excellence Prize*
+**Data Analysis Competition**, Korea National Open University
 
+* Applied XAI techniques to improve interpretability of machine learning and deep learning models for practical deployment.
 
+**Sep. 2023** — *Award Winner (Finance Division)*
+**5th Daegu Big Data Analysis Competition**, Daegu Digital Innovation Promotion Agency
+
+* Conducted time-series sales forecasting to identify high-performing but under-credited business sectors, suggesting risk-aware financial support strategies.
+
+**Aug. 2023** — *Excellence Prize*
+**K-NU K-Digital Platform Hackathon**, Kyungpook National University Data Convergence Research Institute
+
+* Designed and implemented a deep-learning-based sign language translation system, integrating video-to-text and STT pipelines to support communication for the hearing impaired.
 
 <br/>
 <hr/>
 
-
+<!-- 
 ## 📌Work Experience
 
 <!-- #### Life Planning Lab
 - Data Engineer <i>(Dec. 2021 ~ Jan. 2022)</i>
 - Developed back-end platform and managed database
 - Created a data preprocessor on AWS and built data pipeline for dashboard -->
-
+ -->
 
 <br/>
 <hr/>
@@ -233,7 +244,7 @@ Particularly, I am researching on the following topics:
 <hr/>
 
 
-## 📌What's Next?
+<!-- ## 📌What's Next?
 
 #### Remove Watermark 
 - 이미지를 입력하면 워터마크를 자동으로 없애주고 없앤부분은 자동보강해서 output 배출
@@ -245,8 +256,8 @@ Particularly, I am researching on the following topics:
 - Youtube 링크를 주면 영상 다운로드 및 몇분부터 몇분까지 할 수 있게 해주는 서비스
   
 #### AI drone
-- drone 카메라에 AI탑재해서, CV관련 작업을 수행하는 프로젝트.
+- drone 카메라에 AI탑재해서, CV관련 작업을 수행하는 프로젝트. -->
 
 ```
-Last updated: 13rd, Feb. 2025
+Last updated: 29th, Dec. 2025
 ```
