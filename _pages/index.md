@@ -31,7 +31,7 @@ Particularly, I am researching on the following topics:
 <a href="https://github.com/2JAE22" target="_blank" class="button button--medium"><i class="fa-brands fa-github"></i> Github</a>
 
 <!-- <a href="https://www.linkedin.com/" target="_blank" class="button button--medium"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> -->
-<a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a>
+<!-- <a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a> -->
 <br/>
 
 - Email: leejken530@knu.ac.kr
@@ -41,10 +41,17 @@ Particularly, I am researching on the following topics:
 
 ## 📌News
 
-**
+**Dec. 2025**: Submitted <b>[Flow-Multi: A Flow-Matching Multi-Reward Reinforcement Learning Framework for Text-to-Image Generation](paper\SCI_Journal_2025_Flow-Multi\PDF_SCI_Journal_Flow_multi.pdf)</b> to an <b>[SCI-indexed journal](https://www.mdpi.com/journal/sensors)</b>; currently under review.
 
-**Jan. 2025**: My <b>[MoE를 활용한 객체활용방법론]()</b> paper got accepted to <b>[IPIU](http://www.ipiu.or.kr/)!</b>
+**Sep. 2025**:<b>[SuperSmall-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning](paper\KCI_Journal_2025_SuperSmall_R1\PDF_KCI_Journal_SuperSmallR1.pdf)</b> was accepted to a <b>[KCI-indexed journal](https://ksci.re.kr/)</b>, validating reinforcement-learning-based reasoning in a compact model regime.
 
+**Jul. 2025**:<b>[Small-Math-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning](paper\KCC_2025_Small_math_R1\PDF_KCC_Small-Math-R1.pdf)</b> was accepted to a <b>[KCC](https://www.kiise.or.kr/conference/kcc/2025/)</b>, showing the effectiveness of reinforcement learning on small-parameter models for math reasoning.
+
+**Apr. 2025**:<b>[An End-to-End Framework for Automatic Captioning and Music Generation for Video Content](paper\ASK_2025_Video-to-Music\PDF_ASK_Video-to-Music.pdf)</b> was accepted to a <b>[ASK](https://www.manuscriptlink.com/society/kips/conference/ask2025), showing the end-to-end framework for making music. if you want to see the project page, please go to the [here](https://2jae22.github.io/projects/CV/Video-to-BackgroundMusic/)
+
+**Jan. 2025**: My <b>[MoE를 활용한 객체활용방법론](paper\IPIU_2025_Xray_Classification\PDF_IPIU_Xray_Classification.pdf)</b> paper got accepted to <b>[IPIU](http://www.ipiu.or.kr/)!</b>
+
+**Aug. 2024**: Selected as a participant in **Naver AI Tech Boostcamp (Cohort 7)**, engaging in industry-oriented projects on image classification, semantic segmentation, and model efficiency.[Click_Here if you want to see projects]()
 
 **Mar. 2024**: I got accepted to [CV Lab](https://sites.google.com/view/knu-vilab) as a M.S. graduate student in KNU DataScience.
 
@@ -53,42 +60,85 @@ Particularly, I am researching on the following topics:
 
 ## 📌Education
 
-#### KNU
-- M.S. in Artificial Intelligence, Mar. 2024 ~ Feb. 2026 <i>(Expected)</i>
+#### Kyungpook National University (KNU)
+- M.S. in Artificial Intelligence, Graduate School of Data Science; Mar. 2024 – Feb. 2026 (Expected)
+- GPA: 4.38 / 4.5 (Expected Graduation)
 
-#### GNU University
-- B.S. in Environment Engineering and law, Mar. 2014 ~ Feb. 2022
-- GPA: 3.32 / 4.5 
-
-#### KNO University
+#### Korea National Open University (KNOU)
 - B.S. Statistics, Mar. 2023 ~ Feb.2025<i>(Transfer university for Statistic Study)</i>
 - GPA: 4.1/4.5
 
-#### Sangju High School
-
+#### Gyeongguk National University (GNU)
+- B.S. in Environment Engineering and law, Mar. 2014 ~ Feb. 2022
+- GPA: 3.32 / 4.5 
 
 <br/>
 <hr/>
 
 ## 📌Publications
 
-### <i>2025</i>
-
-#### MoE를 활용한 객체분류방법론
-
-![MoE](/images/about/publications/2025/MoE.png){: width="20%" style="float: left; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;"}
-
-- Jaegun
-- Keywords: MoE
-- <i>Feb. 2025</i>
-
-[Pre-print]() (Under Review), [Codes](https://github.com/2JAE22/paper_Xray_module_classification)
+<br clear="all"/>
+<b>*: equal contribution.</b> &nbsp; <b>†: corresponding author.</b> &nbsp; <b>C: conference</b> &nbsp; J: journal.</b> &nbsp; <b>P: preprint.</b>
 
 <br clear="all"/>
 
-<br/>
-<hr/>
+#### [J2] Flow-Multi: A Flow-Matching Multi-Reward Reinforcement Learning Framework for Text-to-Image Generation
 
+
+![Flow-Multi](paper\SCI_Journal_2025_Flow-Multi\SCI_Journal_flow_multi_figure.png){: style="float:left; width:240px; height:150px; object-fit:cover; margin-right:40px; margin-top:0px; margin-bottom:40px;"}
+
+* <b>Jaegun Lee</b>, Janghoon Choi†
+* Keywords: Text-to-Image Generation, Multi-Reward Reinforcement Learning, Flow Matching
+
+<b>[Sensors (SCI, under review)](https://www.mdpi.com/journal/sensors)</b>,
+[Paper](paper/SCI_Journal_2025_Flow-Multi/PDF_SCI_Journal_Flow_multi.pdf)
+
+<br clear="all"/>
+
+#### [J1] SuperSmall-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning
+![SuperSmall-R1](paper\KCI_Journal_2025_SuperSmall_R1\KCI_Jounal_Super.png){: style="float:left; width:240px; height:150px; object-fit:cover; margin-right:40px; margin-top:0px; margin-bottom:30px;"}
+* <b>Jaegun Lee</b>, Janghoon Choi†
+* Keywords: Mathematical Reasoning, Lightweight Models, Reinforcement Learning
+
+<b>[KCI-indexed Journal](https://ksci.re.kr/)</b>, 2025
+[Paper](paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
+
+<br clear="all"/>
+
+#### [C3] Small-Math-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning
+![Small-Math-R1](paper\KCC_2025_Small_math_R1\KCC_Smallmath.png){: style="float:left; width:240px; height:150px; object-fit:cover; margin-right:40px; margin-top:0px; margin-bottom:30px;"}
+* <b>Jaegun Lee</b>, Janghoon Choi†
+* Keywords: Mathematical Reasoning, Small-Parameter Models, Reinforcement Learning
+
+<b>[KCC 2025](https://www.kiise.or.kr/conference/kcc/2025/)</b>
+[Paper](paper/KCC_2025_Small_math_R1/PDF_KCC_Small-Math-R1.pdf)
+
+<br clear="all"/>
+
+
+#### [C2] An End-to-End Framework for Automatic Captioning and Music Generation for Video Content
+![V2M](paper\ASK_2025_Video-to-Music\ASK_Video.png){: style="float:left; width:240px; height:150px; object-fit:cover; margin-right:40px; margin-top:0px; margin-bottom:30px;"}
+* <b>Jaegun Lee</b>, Taejun Kwon, Janghoon Choi†
+* Keywords: Video Captioning, Music Generation, Multimodal Learning
+
+<b>[ASK 2025](https://www.manuscriptlink.com/society/kips/conference/ask2025)</b>
+[Paper](paper/ASK_2025_Video-to-Music/PDF_ASK_Video-to-Music.pdf) ·
+[Project Page](https://2jae22.github.io/projects/CV/Video-to-BackgroundMusic/)
+
+<br clear="all"/>
+
+
+#### [C1] MoE-Based X-ray Object Classification Methodology
+![MoE](paper\IPIU_2025_Xray_Classification\ipiu_MoE.png){: style="float:left; width:240px; height:150px; object-fit:cover; margin-right:40px; margin-top:0px; margin-bottom:0px;"}
+* <b>Jaegun Lee</b>, Janghoon Choi†
+* Keywords: Medical Image Classification, Mixture-of-Experts
+
+<b>[IPIU 2025](http://www.ipiu.or.kr/)</b>
+[Paper](paper/IPIU_2025_Xray_Classification/PDF_IPIU_Xray_Classification.pdf)
+
+<br clear="all"/>
+
+---
 ## 📌Projects
 
 ### 1. Financial
