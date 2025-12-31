@@ -1,16 +1,37 @@
 # 2JAE22.github.io
 
-ruby download
-check the whether ruby can run in this environment
-ruby -v
-gem -v
+# Ruby 환경 설정 및 Jekyll 실행 방법
 
-gem install bundler
+1. Ruby 설치  
+   Ruby가 시스템에 설치되어 있는지 확인하세요.
 
-bundler -v
-bundle install
+2. Ruby 및 Gem 버전 확인  
+   ```
+   ruby -v
+   gem -v
+   ```
 
-bundle exec jekyll serve
+3. Bundler 설치  
+   ```
+   gem install bundler
+   ```
+
+4. Bundler 버전 확인  
+   ```
+   bundler -v
+   ```
+
+5. 프로젝트 의존성 설치  
+   (프로젝트 폴더에서 실행)
+   ```
+   bundle install
+   ```
+
+6. Jekyll 로컬 서버 실행  
+   ```
+   bundle exec jekyll serve
+   ```
+
 
 | 용어 | 역할/정의 | 언제 쓰나 | 비고 |
 |---|---|---|---|

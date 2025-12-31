@@ -7,15 +7,18 @@ collections:
   pages:
     output: true
     permalink: /:name
-  posts:
-    output: true
-    permalink: /educations/:path #소문자로만 적어야 인식함.
+
   projects:
     output: true
     permalink: /projects/:path
+
   archives:
     output: true
     permalink: /archives/:path
+
+  awards:                # ← 이 줄 추가
+    output: true
+    permalink: /awards/:path
 
 defaults:
   -
@@ -47,6 +50,12 @@ defaults:
       type: "archives"
     values:
       layout: "archive"
+  -
+    scope:
+      path: ""
+      type: "awards"
+    values:
+      layout: "award"
 
 markdown: kramdown
 highlighter: rouge

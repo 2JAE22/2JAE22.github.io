@@ -198,8 +198,6 @@ Particularly, I am researching on the following topics:
 - Data Engineer <i>(Dec. 2021 ~ Jan. 2022)</i>
 - Developed back-end platform and managed database
 - Created a data preprocessor on AWS and built data pipeline for dashboard -->
- -->
-
 <br/>
 <hr/>
 
@@ -236,7 +234,7 @@ Particularly, I am researching on the following topics:
 
 #### Algorithm & Problem Solving
 - Profile Links
-    + [Baekjoon Online Judge]()
+    + [Baekjoon Online Judge](https://www.acmicpc.net/user/leejken530)
     + [Solved.ac]()
 
 

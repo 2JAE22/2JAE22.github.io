@@ -9,36 +9,20 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'About Me'
+    - title: 'Home'
       url: '/'
-    - title: 'Education'
-      url: '/Eductaion'
-      sub_items:
-        - title: 'Computer Vision'
-          url: '/Eductaion/CV'
-        - title: 'Paper'
-          url: '/Eductaion/paper'
+
+    - title: 'Awards'
+      url: '/awards'
 
     - title: 'Projects'
       url: '/projects'
-      sub_items:
-        - title: 'Financial'
-          url: '/projects/Financial'
-        - title: 'CV'
-          url: '/projects/CV'
-        - title: 'LLM'
-          url: '/projects/LLM'
 
     - title: 'Archives'
       url: '/archives'
-      sub_items:
-        - title: 'Memory'
-          url: '/archives/memories'
-        - title: 'Hobby'
-          url: '/archives/hobbies'
 
 footer_settings:
-  footer_tagline: Growup 
+  footer_tagline: GrowUP  
 
 hero_settings:
   overlay_opacity: 0.8
