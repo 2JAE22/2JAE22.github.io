@@ -1,7 +1,8 @@
 ---
 layout: award
 title: 2023 KNU K-Digital Platform Hackathon (Excellent Award)
-date: 2023-08-30
+start_date: 2023-06-30
+end_date: 2023-08-30
 featured_image: ..\images\awards\2023-08-30-KNU-Hackton\2023_Hackton_photo.jpg
 published: true
 ---
