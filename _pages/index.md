@@ -138,36 +138,10 @@ Particularly, I am researching on the following topics:
 
 <br clear="all"/>
 
----
-## 📌Projects
 
-<!-- ### 1. Financial
-#### (1) Fraud Detection
-
-#### (2) Bond Time Series Analysis
-
-#### (3) Loan Screening Analysis Using xAI
-
-
-#### (4) Investment Trading Recommendations through Sentiment Analysis
-
-
-### 2. CV
-#### (1) Object Classification
-#### (2) Object Detection 
-#### (3) Segmentation
-#### (4) OCR
-#### (5) Data-Centric
-
-
-### 3. LLM
-#### (1) Audio AI Model Lightweighting Project -->
-
-<br/>
-<hr/>
 
 ## 📌 Honors and Awards
-
+If you want to see my awards
 **Sep. 2025** — *Future Research Award*
 **K-Data Science Conference**, [K-DS Consortium](https://kdatascience.kr/)
 
@@ -191,15 +165,6 @@ Particularly, I am researching on the following topics:
 <br/>
 <hr/>
 
-<!-- 
-## 📌Work Experience
-
-<!-- #### Life Planning Lab
-- Data Engineer <i>(Dec. 2021 ~ Jan. 2022)</i>
-- Developed back-end platform and managed database
-- Created a data preprocessor on AWS and built data pipeline for dashboard -->
-<br/>
-<hr/>
 
 ## 📌Extra-Curricular Activities
 
@@ -242,20 +207,7 @@ Particularly, I am researching on the following topics:
 <hr/>
 
 
-<!-- ## 📌What's Next?
-
-#### Remove Watermark 
-- 이미지를 입력하면 워터마크를 자동으로 없애주고 없앤부분은 자동보강해서 output 배출
-
-#### Inpaint Anything 
-- 이미지입력 -> 원하는 객체 선택 -> 없애거나 꾸미거나(condition) 커스텀마이징 가능하게끔 하는것
-
-#### Youtube downloader for Custom
-- Youtube 링크를 주면 영상 다운로드 및 몇분부터 몇분까지 할 수 있게 해주는 서비스
-  
-#### AI drone
-- drone 카메라에 AI탑재해서, CV관련 작업을 수행하는 프로젝트. -->
 
 ```
-Last updated: 29th, Dec. 2025
+Last updated: 2nd, Jan. 2026
 ```

@@ -2,7 +2,7 @@
 layout: award
 title: 2023 KNU K-Digital Platform Hackathon (Excellent Award)
 date: 2023-08-30
-featured_image: images\awards\2023-08-30-KNU-Hackton\2023_Hackton_photo.jpg
+featured_image: ..\images\awards\2023-08-30-KNU-Hackton\2023_Hackton_photo.jpg
 published: true
 ---
 
@@ -57,6 +57,18 @@ This design enables **seamless, two-way communication within a single integrated
 
 ## 🎬 Results and Achievements
 
+<div style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin:12px 0;">
+  <video controls preload="metadata"
+         src="..\images\awards\2023-08-30-KNU-Hackton\video1.mp4"
+         poster="..\images\awards\2023-08-30-KNU-Hackton\poster1.png"
+         style="width:48%; min-width:260px; max-width:520px; border:1px solid #ddd; border-radius:8px;">
+  </video>
+  <video controls preload="metadata"
+         src="..\images\awards\2023-08-30-KNU-Hackton\video2.mp4"
+         poster="..\images\awards\2023-08-30-KNU-Hackton\poster2.png"
+         style="width:48%; min-width:260px; max-width:520px; border:1px solid #ddd; border-radius:8px;">
+  </video>
+</div>
 - Successfully demonstrated real-time sign language interpretation and speech transcription
 - Integrated both communication directions into a single service workflow
 - Recognized for **technical feasibility, social impact, and practical applicability**
@@ -76,3 +88,4 @@ This design enables **seamless, two-way communication within a single integrated
 >
 > - 2023 KNU K-Digital Platform Hackathon  
 > - **Excellent Award**
+![awards](..\images\awards\2023-08-30-KNU-Hackton\2023_Hackton_photo.jpg)
