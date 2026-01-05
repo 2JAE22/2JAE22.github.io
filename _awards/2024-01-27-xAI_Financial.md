@@ -98,8 +98,9 @@ We propose an **Explainable AI (xAI)-driven loan screening framework** that comb
 - A high-performance machine learning model for credit approval prediction, and
 - Post-hoc explainability techniques to interpret and validate the model’s decisions.
 
-By integrating **SHAP (SHapley Additive exPlanations)** into the pipeline, the system provides both **global feature importance** and **individual-level decision explanations**,enabling transparent and reliable credit screening.
+By integrating **SHAP (SHapley Additive exPlanations)** [1] into the pipeline, the system provides both **global feature importance** and **individual-level decision explanations**, enabling transparent and reliable credit screening .
 The formal SHAP equation is as follows:
+
 
 $$
 \phi_i = \sum_{S \subseteq N \setminus \{i\}}
@@ -175,4 +176,15 @@ specific prediction.
   - Successfully implemented an end-to-end explainable loan screening pipeline
 
 
+## Commemorative Photo
+![Commemorative Photo](..\images\awards\2024-01-27-xAI_Financial\xAI3_photo.png)
 <br>
+
+
+---
+
+## 📚 References
+[1] S. Lundberg and S.-I. Lee,  
+*A Unified Approach to Interpreting Model Predictions*,  
+arXiv:1705.07874, 2017.  
+https://arxiv.org/abs/1705.07874
