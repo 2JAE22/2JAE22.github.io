@@ -1,6 +1,6 @@
 ---
 layout: award
-title: "Financial Forecasting for Underbanked Industries"
+title: "2023 Financial Forecasting for Underbanked Industries"
 subtitle: "2023 Daegu Big Data Financial Analysis Project"
 start_date: 2023-05-01
 end_date: 2023-09-26
@@ -80,24 +80,25 @@ This approach supplements conventional credit evaluation with **objective, data-
 
 ## 🎬 Results and Achievements
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
-  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius: 5px;">
+<div style="
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result1.png" style="width:100%; border-radius:5px;">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result2.png" style="width:100%; border-radius:5px;">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result3.png" style="width:100%; border-radius:5px;">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result4.png" style="width:100%; border-radius:5px;">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result5.png" style="width:100%; border-radius:5px;">
+  <img src="/images/awards/2023-09-26-DaeguBigDate_financial/Result6.png" style="width:100%; border-radius:5px;">
 </div>
+
 
 * **Technical Feasibility**: Constructed a practical time-series forecasting pipeline.
 * **Social Impact**: Proposed alternative indicators for financial inclusion.
 * **Model Validation**: Comprehensive comparison proving ARIMA's suitability for this specific dataset.
 
-**🏅 Award Received**
-<div style="background-color: #f8f9fa; border-left: 5px solid #007bff; padding: 15px; border-radius: 4px;">
-  <strong>Excellent Award (2nd Prize)</strong><br>
-  2023 Daegu Financial Competetion
-</div>
 
 <br/>
 
@@ -107,4 +108,10 @@ This approach supplements conventional credit evaluation with **objective, data-
 2.  **For SMEs**: Expanded access to financing for underserved industries.
 3.  **For Policy**: Data-driven foundations for inclusive financial support.
 
----
+
+<br>
+**🏅 Award Received**
+<div style="background-color: #f8f9fa; border-left: 5px solid #007bff; padding: 15px; border-radius: 4px;">
+  <strong>Excellent Award (2nd Prize)</strong><br>
+  2023 Daegu Financial Competetion
+</div>
