@@ -4,7 +4,7 @@ title: "2025 K-DataScienc Conference"
 subtitle: "2025 K-DataScienc Conference Project"
 start_date: 2025-05-20
 end_date: 2025-09-05
-featured_image: "images/awards/"
+featured_image: "images/awards/2025-09-25-K-dateScience Conference/kds_method_3.png"
 published: true
 ---
 
@@ -145,7 +145,20 @@ Together, these three components form a unified reinforcement-learning framework
   - Research results accepted for **poster presentation** at the 2025 K-Data Science Conference
   - Selected as a **funded research project** by the conference committee
 
+
 <br/>
+
+## 📄 Related Publication
+
+- **SuperSmall-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning**  
+  *Jaegun Lee, Janghoon Choi*  
+  Journal of The Korea Society of Computer and Information (KCI-indexed), 2025  
+
+  - Introduces a reinforcement-learning-only training strategy for compact reasoning models  
+  - Proposes ZeroGRPO by removing KL-divergence constraints  
+  - Demonstrates significant performance gains on Math-500 under strict resource constraints  
+
+  👉 [Paper PDF](../paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
 
 ## Commemorative Photo
 <div style="
