@@ -150,7 +150,7 @@ Together, these three components form a unified reinforcement-learning framework
 
 ## 📄 Related Publication
 
-- **SuperSmall-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning**  
+**SuperSmall-R1: A Lightweight Reinforcement Learning Model for Mathematical Reasoning**  
   *Jaegun Lee, Janghoon Choi*  
   Journal of The Korea Society of Computer and Information (KCI-indexed), 2025  
 
