@@ -55,23 +55,35 @@ The overall architecture is designed to be modular, allowing each component to b
 We evaluate our approach through qualitative results that demonstrate the effectiveness of the proposed framework.
 The following examples illustrate representative outputs under different conditions.
 
-<!-- 2x2 video grid -->
-<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; margin:24px 0;">
+<div style="width:100%; margin:24px 0;">
 
-  <video controls preload="metadata" style="width:100%; border-radius:8px;">
-    <source src="../images/projects/V2M/video1.mp4" type="video/mp4">
-  </video>
+  <!-- Column headers -->
+  <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; margin-bottom:8px;">
+    <div style="text-align:center; font-weight:600;">Before</div>
+    <div style="text-align:center; font-weight:600;">After</div>
+  </div>
 
-  <video controls preload="metadata" style="width:100%; border-radius:8px;">
-    <source src="../images/projects/V2M/video2.mp4" type="video/mp4">
-  </video>
+  <!-- Video grid -->
+  <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;">
 
-  <video controls preload="metadata" style="width:100%; border-radius:8px;">
-    <source src="../images/projects/V2M/video3.mp4" type="video/mp4">
-  </video>
+    <!-- Row 1 -->
+    <video controls preload="metadata" style="width:100%; border-radius:8px;">
+      <source src="../images/projects/V2M/video1.mp4" type="video/mp4">
+    </video>
 
-  <video controls preload="metadata" style="width:100%; border-radius:8px;">
-    <source src="../images/projects/V2M/video4.mp4" type="video/mp4">
-  </video>
+    <video controls preload="metadata" style="width:100%; border-radius:8px;">
+      <source src="../images/projects/V2M/video2.mp4" type="video/mp4">
+    </video>
 
+    <!-- Row 2 -->
+    <video controls preload="metadata" style="width:100%; border-radius:8px;">
+      <source src="../images/projects/V2M/video3.mp4" type="video/mp4">
+    </video>
+
+    <video controls preload="metadata" style="width:100%; border-radius:8px;">
+      <source src="../images/projects/V2M/video4.mp4" type="video/mp4">
+    </video>
+
+  </div>
 </div>
+
