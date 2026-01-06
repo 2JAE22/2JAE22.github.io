@@ -1,6 +1,6 @@
 ---
 title: Video-to-BackgroundMusic
-featured_image: https://vip2.loli.io/2023/09/01/4mpxRGOMdWaHASr.png
+featured_image: "images/projects/V2M/ASK_Video.png"
 start_date: '2025-04-08'
 end_date: '2025-05-28'
 last_modified_at: '2025-05-29 22:00:00'
@@ -10,7 +10,10 @@ last_modified_at: '2025-05-29 22:00:00'
 
 
 
-![Kuvis1](https://vip2.loli.io/2023/09/01/QGOXRI3Ha2bxjUP.png)
+![V2M](../images/projects/V2M/ASK_Video.png)
+
+👉 [Paper](../paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
+👉 [Project Page]()
 
 
 

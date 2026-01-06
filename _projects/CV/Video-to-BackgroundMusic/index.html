@@ -1,0 +1,233 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Video-to-Background Music</title>
+    
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="./utils/Video-to-BackgroundMusic/css/bulma.min.css">
+    <link rel="stylesheet" href="./utils/Video-to-BackgroundMusic/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./utils/Video-to-BackgroundMusic/css/index.css">
+    <link rel="stylesheet" href="./utils/Video-to-BackgroundMusic/css/style.css">
+    
+    <!-- JavaScript 파일 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./utils/Video-to-BackgroundMusic/js/bulma-carousel.min.js"></script>
+    <script src="./utils/Video-to-BackgroundMusic/js/index.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1><strong>Video-to-BackgroundMusic: End-to-End Framework</strong></h1>
+        <p style="text-align: center; font-weight: bold; font-size: 1.6em">Automatic Captioning and Music Generation for Video Content</p>
+        
+        <!-- 저자 정보 -->
+        <div class="authors-container">
+          <div class="author">
+              <p id="authors">
+                  <a href="https://github.com/2JAE22"><b>이재건</b></a>
+                  <br>
+              </p>
+          </div>
+          <div class="author">
+              <p id="authors">
+                  <a href="https://github.com/KwonTaeJunDS"><b>권태준</b></a>
+                  <br>
+              </p>
+          </div>
+          <div class="author">
+            <p id="authors">
+                <a href="https://janghoonchoi.github.io/"><b>최장훈</b></a>
+                <br>
+            </p>
+        </div>
+      </div>
+        
+
+        <!-- 링크 -->
+        <div class="links-container">
+          <a href="pdf/final_kb_univ_paper.pdf" target="_blank" class="project-link">
+              <b>[Paper]</b>
+          </a>
+          <a href="https://github.com/2JAE22/Video-to-BackgroundMusic" target="_blank" class="project-link">
+              <b>[Code]</b>
+          </a>
+          <a href="https://2jae22.github.io/projects/CV/Video-to-BackgroundMusic/" target="_blank" class="project-link">
+              <b>[Project Page]</b>
+          </a>
+      </div>
+      
+
+    
+
+    <!-- Abstract -->
+    <div class="content">
+        <h2 style="text-align:center;"><b>Abstract</b></h2>
+        <p>
+          본 논문에서는 비디오 콘텐츠에 대한 자동 캡셔닝과 그에 맞는 배경음악 생성을 위한 통합 프레임워크를 제안한다. 우리의 접근 방식은 최첨단 비디오 이해 모델인 VideoLLaMA3와 텍스트 기반 음악 생성 모델인 YuE를 결합하여 비디오의 시각적 내용을 분석하고 이에 적합한 배경음악을 자동으로 생성한다. 제안된 워크플로우는 입력 비디오를 VideoLLaMA3 모델에 전달하여 비디오의 내용, 분위기, 감정을 설명하는 캡션을 생성하고, 이 캡션을 YuE 모델에 입력하여 비디오의 시각적 내용과 조화를 이루는 배경음악을 생성한다. 다양한 장르와 분위기의 비디오에 대한 실험 결과, 우리의 프레임워크는 비디오 내용에 적합한 고품질 배경음악을 생성할 수 있음을 보여주었다. 이 연구는 비디오 콘텐츠 제작, 자동 멀티미디어 콘텐츠 생성, 그리고 접근성 향상을 위한 응용 프로그램에 기여할 수 있다.
+        </p>
+    </div>
+
+    <!-- Approach -->
+    <div class="content">
+        <h2 style="text-align:center;"><b>Approach</b></h2>
+        <div style="text-align: center;">
+            <img src="./image/V2M_5.png" alt="V2M Architecture" style="max-width: 100%; height: auto;">
+        </div>
+        <p>
+            이 시스템은 입력 비디오의 내용을 이해하여 가장 어울리는 배경음악을 자동으로 생성하고 삽입하는 Video-to-Music 파이프라인
+        </p>
+    </div>
+
+
+    <!-- 비디오 섹션 -->
+    <div class="content">
+      <h2><b>데모 비디오</b></h2>
+      <div class="t">
+          <ul>
+              <li>원본 비디오
+                  <div class="center-video">
+                      <video width="384" height="240" controls>
+                          <source src="../Video-to-BackgroundMusic/video/original/bf_frightening_cutting.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </li>
+              <li>결과 비디오
+                  <div class="center-video">
+                      <video width="384" height="240" controls>
+                          <source src="../Video-to-BackgroundMusic/video/output/af_frightening_cutting.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </li>
+          </ul>
+          <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/crying_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/crying_output_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/fresh.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/fresh_output.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/frightening2_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/frightening2_output_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/urgent.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/urgent_output.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/excited.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/excited_final_output.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/motocycle.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/motocycle_final_output.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <!-- <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/bf_frightening_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/af_frightening_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/original/bf_frightening_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <div class="center-video">
+                    <video width="384" height="240" controls>
+                        <source src="../Video-to-BackgroundMusic/video/output/af_frightening_cutting.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul> -->
+      </div>
+  </div>
+</body>
+</html>
