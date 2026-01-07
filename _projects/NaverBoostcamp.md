@@ -19,8 +19,8 @@ Below is a summary of the key projects and my specific contributions.
 
 ---
 
-### 1. Sketch Image Classification (ImageNet-Sketch) · 🔗 [GitHub](https://github.com/2JAE22/level1-imageclassification-cv-02)
-
+### 1. Sketch Image Classification (ImageNet-Sketch) 
+👉 [Code](https://github.com/2JAE22/level1-imageclassification-cv-02)
 <div style="
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -149,16 +149,155 @@ Removing misleading samples consistently improved generalization, while indiscri
 ---
 
 ### 2. Trash Object Detection
+👉 [Code](https://github.com/2JAE22/objectdetection-cv-02)
+👉 [Report](../images/projects/Naver_boostcamp/TrashDetection_WrapupReport.pdf)
+
+![Trash_overview](../images/projects/Naver_boostcamp/Trash_overview_1.png)
+
 **Objective**: Detect and classify trash in high-resolution (1024x1024) images into 10 categories.
-* **Metrics**: mAP50
-* **My Role**:
+* 🔍 **EDA**: ① Box ② Class ③ Color
+<!-- 🔍 EDA Visualization (3x3 Grid) -->
+<div style="
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0 30px 0;
+">
+
+  <!-- 1 -->
+  <div style="
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  ">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_1_1.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 2 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_1_2.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 3 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_1_3.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 4 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_2_1.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 5 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_2_2.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 6 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_2_3.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 7 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_2_3.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 8 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_3_1.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 9 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_EDA_3_2.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+</div>
+
+* 🎯 **My Role**:
     * **YOLO Implementation**: Experimented with **YOLOv11 (s, l, xl)** models to verify the performance of 1-stage detectors compared to 2-stage models.
     * **Ensemble Strategy**: Contributed to the final ensemble by combining YOLO predictions with the team's Cascade R-CNN and DINO models.
-* **Methods**:
+* 🛠️ **Methods**:
     * **Augmentation**: Applied Mosaic, MixUp, and RandomCrop to handle object scale variations.
     * **Ensemble**: Used **WBF (Weighted Boxes Fusion)** and Soft-NMS to merge bounding boxes effectively.
-* **Result**: Achieved Public Score **0.6714** / Private Score **0.6558**.
+* 📊 **Result**: Achieved Public Score **0.6714** / Private Score **0.6558**.
+<div style="
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0 30px 0;
+">
 
+  <!-- 1 -->
+  <div style="
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  ">
+    <img src="../images/projects/Naver_boostcamp/Trash_result_1.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 2 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_result_2.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 3 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_result_3.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+
+  <!-- 4 -->
+  <div style="height:220px; display:flex; align-items:center; justify-content:center;
+              overflow:hidden; border-radius:8px; background:#fff;
+              box-shadow:0 3px 6px rgba(0,0,0,0.08);">
+    <img src="../images/projects/Naver_boostcamp/Trash_result_4.png"
+         style="width:100%; height:100%; object-fit: contain;">
+  </div>
+</div>
 <br/>
 
 ---

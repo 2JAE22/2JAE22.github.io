@@ -8,6 +8,8 @@ featured_image: "images/awards/2025-09-25-K-dateScience Conference/kds_method_3.
 published: true
 ---
 
+👉 [Paper](../paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
+👉 [Code]()
 
 ## 🏆 Future Research Award
 ### 2025 K-Data Science Conference (Research & Poster Presentation)
@@ -158,8 +160,7 @@ Together, these three components form a unified reinforcement-learning framework
   - Proposes ZeroGRPO by removing KL-divergence constraints  
   - Demonstrates significant performance gains on Math-500 under strict resource constraints  
 
-  👉 [Paper PDF](../paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
-
+  
 ## Commemorative Photo
 <div style="
   display: grid;
