@@ -100,6 +100,8 @@ but by dataset quality and structure:
 
 **Approach & Key Solutions**
 
+![Sketch_method](../images/projects/Naver_boostcamp/Sketch_Method_1.png)
+
 - **Exploratory Data Analysis (EDA)**  
   Conducted dataset-wide analysis on:
   - Image count per class
@@ -132,6 +134,8 @@ but by dataset quality and structure:
   - Compared ViT-based (EVA-CLIP) and CNN-based models from an inductive bias perspective
 
 **Results**  
+
+![Sketch_Result](../images/projects/Naver_boostcamp/Sketch_Result_1.png)
 - Achieved up to **~0.92 accuracy**, outperforming naive augmentation baselines
 - Demonstrated that **dataset de-duplication and ambiguity removal** yielded larger gains than architectural changes
 - Confirmed that overly aggressive augmentations degrade performance on already-distorted sketch data
