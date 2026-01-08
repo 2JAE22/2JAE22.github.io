@@ -28,7 +28,7 @@ Particularly, I am researching on the following topics:
 <a href="/pdf/cv.pdf" target="_blank" class="button button--medium"><i class="fa fa-file-pdf"></i> CV</a>
 <a href="/pdf/portfolio.pdf" target="_blank" class="button button--medium"><i class="fa fa-file-pdf"></i> Portfolio</a>
 <a href="mailto:leejken530@knu.ac.kr" class="button button--medium"><i class="fa fa-envelope"></i> E-mail</a>
-<a href="https://github.com/2JAE22" target="_blank" class="button button--medium"><i class="fa-brands fa-github"></i> Github</a>
+<a href="https://github.com/2JAE22?tab=repositories" target="_blank" class="button button--medium"><i class="fa-brands fa-github"></i> Github</a>
 
 <!-- <a href="https://www.linkedin.com/" target="_blank" class="button button--medium"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> -->
 <!-- <a href="https://scholar.google.com/citations?user=DFKGTG0AAAAJ/" target="_blank" class="button button--medium"><i class="fa-brands fa-google"></i> Google Scholar</a> -->
@@ -90,7 +90,7 @@ Particularly, I am researching on the following topics:
 * <b>Jaegun Lee</b>, Janghoon Choi†
 * Keywords: Text-to-Image Generation, Multi-Reward Reinforcement Learning, Flow Matching
 
-<b>[Sensors (SCI, under review)](https://www.mdpi.com/journal/sensors)</b>,
+<b>[Sensors (SCI_under review)](https://www.mdpi.com/journal/sensors)</b>,
 [Paper](paper/SCI_Journal_2025_Flow-Multi/PDF_SCI_Journal_Flow_multi.pdf)
 
 <br clear="all"/>
@@ -100,7 +100,7 @@ Particularly, I am researching on the following topics:
 * <b>Jaegun Lee</b>, Janghoon Choi†
 * Keywords: Mathematical Reasoning, Lightweight Models, Reinforcement Learning
 
-<b>[KCI-indexed Journal](https://ksci.re.kr/)</b>, 2025
+<b>[KCI-indexed Journal](https://ksci.re.kr/)</b>,
 [Paper](paper/KCI_Journal_2025_SuperSmall_R1/PDF_KCI_Journal_SuperSmallR1.pdf)
 
 <br clear="all"/>
@@ -110,7 +110,7 @@ Particularly, I am researching on the following topics:
 * <b>Jaegun Lee</b>, Janghoon Choi†
 * Keywords: Mathematical Reasoning, Small-Parameter Models, Reinforcement Learning
 
-<b>[KCC 2025](https://www.kiise.or.kr/conference/kcc/2025/)</b>
+<b>[KCC 2025](https://www.kiise.or.kr/conference/kcc/2025/)</b>,
 [Paper](paper/KCC_2025_Small_math_R1/PDF_KCC_Small-Math-R1.pdf)
 
 <br clear="all"/>
@@ -121,8 +121,8 @@ Particularly, I am researching on the following topics:
 * <b>Jaegun Lee</b>, Taejun Kwon, Janghoon Choi†
 * Keywords: Video Captioning, Music Generation, Multimodal Learning
 
-<b>[ASK 2025](https://www.manuscriptlink.com/society/kips/conference/ask2025)</b>
-[Paper](paper/ASK_2025_Video-to-Music/PDF_ASK_Video-to-Music.pdf) ·
+<b>[ASK 2025](https://www.manuscriptlink.com/society/kips/conference/ask2025)</b>,
+[Paper](paper/ASK_2025_Video-to-Music/PDF_ASK_Video-to-Music.pdf) ,
 [Project Page](https://2jae22.github.io/projects/CV/Video-to-BackgroundMusic/)
 
 <br clear="all"/>
@@ -133,7 +133,7 @@ Particularly, I am researching on the following topics:
 * <b>Jaegun Lee</b>, Janghoon Choi†
 * Keywords: Medical Image Classification, Mixture-of-Experts
 
-<b>[IPIU 2025](http://www.ipiu.or.kr/)</b>
+<b>[IPIU 2025](http://www.ipiu.or.kr/)</b>,
 [Paper](paper/IPIU_2025_Xray_Classification/PDF_IPIU_Xray_Classification.pdf)
 
 <br clear="all"/>
