@@ -9,7 +9,7 @@ featured_image: /images/about/banner_image.jpg
 
 ![Profile Image](/images/about/profile_image2.png){: width="200" height="200" style="float: right; margin-right: 20px; margin-left: 20px; margin-bottom: 20px;"}
 
-👋HI! I am Jaegun Lee. I am a M.S. student at [KNU DataScience](https://data.knu.ac.kr/), majoring in Artificial Intelligence. I am working as an AI graduate researcher at [Computer Vision](https://sites.google.com/view/knu-vilab) at [KNU](https://www.knu.ac.kr/wbbs/wbbs/main/main.action), advised by [Prof. Janghoon Choi](https://sites.google.com/view/knu-vilab/members?authuser=0). 
+👋HI! I am Jaegun Lee. I am a M.S. student at [KNU DataScience](https://data.knu.ac.kr/), majoring in Artificial Intelligence. I am working as an AI graduate researcher at [Computer Vision](https://sites.google.com/view/knu-vilab) at [KNU](https://www.knu.ac.kr/wbbs/wbbs/main/main.action), advised by [Prof. Janghoon Choi](https://janghoonchoi.github.io/). 
 
 <br/>
 I am deeply interested in AI research, particularly in Computer Vision. My work focuses on **post-training** methods such as **reinforcement-based** optimization, as well as **Generative AI**. Ultimately, I aim to create AI systems that deliver meaningful value by enabling users to imagine, build, and share their ideas freely.
@@ -51,7 +51,7 @@ Particularly, I am researching on the following topics:
 
 **Jan. 2025**: My <b>[MoE를 활용한 객체활용방법론](paper\IPIU_2025_Xray_Classification\PDF_IPIU_Xray_Classification.pdf)</b> paper got accepted to <b>[IPIU](http://www.ipiu.or.kr/)!</b>
 
-**Aug. 2024**: Selected as a participant in **Naver AI Tech Boostcamp (Cohort 7)**, engaging in industry-oriented projects on image classification, semantic segmentation, and model efficiency.[Click_Here if you want to see projects]()
+**Aug. 2024**: Selected as a participant in **Naver AI Tech Boostcamp (Cohort 7)**, engaging in industry-oriented projects on image classification, semantic segmentation, and model efficiency.[Click_Here if you want to see projects](https://2jae22.github.io/projects/NaverBoostcamp)
 
 **Mar. 2024**: I got accepted to [CV Lab](https://sites.google.com/view/knu-vilab) as a M.S. graduate student in KNU DataScience.
 
@@ -208,6 +208,7 @@ If you want to see my awards
 
 
 
+
 ```
-Last updated: 2nd, Jan. 2026
+Last updated: {{ site.time | date: " %Y/%m/%d " }}
 ```

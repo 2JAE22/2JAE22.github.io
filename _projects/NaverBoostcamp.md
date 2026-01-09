@@ -251,6 +251,15 @@ Removing misleading samples consistently improved generalization, while indiscri
     * **Augmentation**: Applied Mosaic, MixUp, and RandomCrop to handle object scale variations.
     * **Ensemble**: Used **WBF (Weighted Boxes Fusion)** and Soft-NMS to merge bounding boxes effectively.
 * 📊 **Result**: Achieved Public Score **0.6714** / Private Score **0.6558**.
+<br>
+You can find the detailed experimental results below.
+<iframe
+  src="https://wandb.ai/leejken530-kyungpook-national-university/recycling/reports/curves/Recall-Confidence(B)?embed=true"
+  width="100%"
+  height="600"
+  frameborder="0"
+></iframe>
+
 <div style="
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -414,14 +423,14 @@ Removing misleading samples consistently improved generalization, while indiscri
        alt="Commemorative Animated GIF"
        style="max-width: 800px; width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
   <p style="font-size:0.9rem; color:#555; margin-top:8px;">
-    Handbone Example
+    This Streamlit app was developed to provide detailed, step-by-step visualization of hand bone segmentation examples.
   </p>
 </div>
 
 **Objective**: Develop a segmentation model to precisely identify bone areas in medical X-ray images.
 * **Metrics**: Dice Score
 * **🎯 My Role & Technical Approach**:
-    * **Library Comparison**: Conducted comparative experiments between `torchseg` and `smp` libraries.
+    * **Library Comparison & Data Workflow**: Conducted analysis of folder structures and performed detailed data EDA, then refactored the pipeline for efficient data preprocessing and augmentation using various libraries.
     * **Encoder Experiments**: Analyzed performance differences between Transformer-based encoders and CNN-based encoders.
     * **Troubleshooting**: Resolved weight initialization errors (`encoder_weights: None`) and decoder compatibility issues.
 * **🛠️ Methods**:
