@@ -437,7 +437,10 @@ You can find the detailed experimental results below.
     * **Model Architecture**: Found that **U-Net** provided more stable performance on medical data compared to DeepLabV3+ or U-Net++.
     * **Hyperparameter Tuning**: Optimized Image Size and Epochs using WandB Sweeps.
 
+* **📊 Result**:
+![HandBone Result](../images/projects/Naver_boostcamp/HandBone_Result_1.png)
 
+Finally, the best result was obtained <strong>by combining high-resolution inputs with attention-enhanced decoding and a soft ensemble strategy</strong>, achieving a <strong>Dice score of 0.9751</strong> on the test set.
 
 ### 📸 Commemorative Photos
 
