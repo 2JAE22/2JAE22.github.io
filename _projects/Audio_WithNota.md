@@ -260,8 +260,9 @@ Applying QLoRA reduces memory usage by nearly 50% while improving ASR by approxi
 Compared to the 3B lightweight SALMONN model provided by NOTA, the final model is trained using approximately 1.06M Stage 1 samples and 1.15M Stage 2 samples. In a server environment, it achieves <strong>a 16% decrease in ASR, a 27% increase in AAC, a 55% reduction in memory usage, and a 23% reduction in latency</strong>, successfully improving overall efficiency across all metrics.
 
 ## Demo 
+
 <p align="center">
-  <img src="../images/projects/Audio_WithNota/audio_demo.gif" alt="Audio Language Model Demo" style="max-width: 1080px; border-radius: 8px; box-shadow:0 4px 12px rgba(0,0,0,0.10);" />
+  <img src="images/projects/Audio_WithNota/audio_demo.gif" alt="Audio Language Model Demo" style="max-width: 1080px; border-radius: 8px; box-shadow:0 4px 12px rgba(0,0,0,0.10);" />
 </p>
 <p align="center" style="font-size:0.95em; color:#555;">
   <b>Demo:</b> Example of the AI model analyzing and responding to audio input based on a given prompt.
