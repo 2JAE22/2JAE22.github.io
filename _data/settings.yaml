@@ -18,11 +18,11 @@ menu_settings:
     - title: 'Projects'
       url: '/projects'
 
-    - title: 'Archives'
-      url: '/archives'
+    # - title: 'Archives'
+    #   url: '/archives'
 
 footer_settings:
-  footer_tagline: GrowUP  
+  footer_tagline: GrowUp  
 
 hero_settings:
   overlay_opacity: 0.8
